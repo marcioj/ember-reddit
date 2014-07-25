@@ -16,7 +16,6 @@ test('visiting /', function() {
   visit('/');
 
   andThen(function() {
-    equal(currentPath(), 'index');
     equal(find('h1').text(), 'Ember reddit');
   });
 });
