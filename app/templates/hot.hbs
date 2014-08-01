@@ -1,0 +1,16 @@
+{{#each model.data.children}}
+  <div class="media" >
+    <div class="pull-left">
+      {{data.score}}
+    </div>
+    <a class="pull-left" {{bind-attr href=data.url}}>
+      <img class="media-object" {{bind-attr src=data.thumbnail}} alt="">
+    </a>
+    <div class="media-body">
+      <a {{bind-attr href=data.url}}>
+        <h4 class="media-heading">{{data.title}}</h4>
+      </a>
+    </div>
+  </div>
+{{/each}}
+
