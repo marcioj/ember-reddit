@@ -1,9 +1,9 @@
-{{#each model.data.children}}
+{{#each model.data.children itemController="entry"}}
   <div class="media" >
     <div class="pull-left">
       {{data.score}}
     </div>
-    {{#if data.thumbnail}}
+    {{#if validThumbnailUrl}}
       <a class="pull-left" {{bind-attr href=data.url}}>
         <img class="media-object" {{bind-attr src=data.thumbnail}}>
       </a>
